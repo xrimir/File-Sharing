@@ -1,0 +1,28 @@
+$drag-border-color: #e0eafc;
+$share-color: #44495e;
+.share_container {
+    display: flex;
+    min-width: 100%;
+    min-height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px dashed $drag-border-color;
+    color: $share-color;
+    .share_btn {
+        margin-top: 8px;
+        font-size: 22px;
+        background-color: #fff;
+        padding: 5px 8px;
+        border: 3px dashed $drag-border-color;
+        color: $share-color;
+    }
+    .share_btn:hover {
+        border: 3px dashed rgb(79, 113, 226);
+        transition: 0.5s;
+        cursor: pointer;
+    }
+    span {
+        padding: 5px;
+    }
+}

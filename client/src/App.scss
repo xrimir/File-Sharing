@@ -1,0 +1,50 @@
+$drag-border-color: #e0eafc;
+$drag-border-color-active: rgb(79, 113, 226);
+$drag-header-span-color: #44495e;
+.drag_component_container {
+    width: 100%;
+    height: 100%;
+    
+    .drag_title {
+        margin-bottom: 20px;
+        font-weight: 500;
+    }
+
+    .drag_component {
+        width: 100%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 3px dashed $drag-border-color;
+
+        .drag_main_text {
+            font-size: 25px;
+            font-weight: 500;
+            color: $drag-header-span-color;
+
+            .drag_browse_btn {
+                font-size: 25px;
+                font-weight: 500;
+                color: #1683ff;
+                cursor: pointer;
+            }
+            
+        }
+        
+        .drag_supports {
+            font-size: 15px;
+            margin-top: 3px;
+        }
+    }
+
+    .active {
+        border: 3px dashed $drag-border-color-active;
+    }
+}
+
+
+
+
+
